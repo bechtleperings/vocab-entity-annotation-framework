@@ -8,6 +8,9 @@ Based on this analysis, the machine learning algorithm generates a set of person
 
 The goal of recommendations in knowledge management is to make it easier for users to discover relevant and valuable information resources, even within a large and complex knowledge base. By presenting users with personalized recommendations, knowledge management systems can help to improve engagement, promote knowledge sharing, and enhance the overall quality of the knowledge base.
 
+## Requirements
+
+* an information entity can have multiple link recommendations
 
 ## Example
 
@@ -16,13 +19,14 @@ The goal of recommendations in knowledge management is to make it easier for use
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skill: <http://data.europa.eu/esco/skill> .
-@prefix mav: <http://data.europa.eu/esco/> .
+@prefix esco: <http://data.europa.eu/esco/> .
+@prefix rec: <http://purl.org/ontology/rec/core#> .
 
 
 :x a sdo:LearningResource
    sdo:title "Brew your own beer. Leaction 5: Roasting the malt."
    sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d
 
-<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> a mav:Recommendation
+<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> eaf:confidence "0.7"
 
 ````

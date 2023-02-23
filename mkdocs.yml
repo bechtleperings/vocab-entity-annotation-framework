@@ -1,11 +1,56 @@
-site_name: Vocabulary - Maverick Annotation Framework
+site_name: Entity Annotation Framework
+extra_css: 
+   - assets/stylesheets/extra.css
 
 theme: 
-  palette: 
-    scheme: default
-    primary: red 
   name: material
+  custom_dir: overrides
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode    
+
   features:
     - navigation.instant
-    - navigation.tracking
     - navigation.sections
+    - navigation.tracking
+    - navigation.tabs  
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bechtleav360
+
+nav: 
+    - "Definitions": 
+      - "Layers": "definitions/Layers.md"
+      - "Annotations": "definitions/Annotations.md"
+      - "Recommendations": "definitions/Recommendations.md"
+      - "Feedback": "definitions/Feedback.md"
+    - "Properties":
+      - "Recommendations": 
+        - "confidence": "properties/recommendations/confidence.md"
+        - "source": "properties/recommendations/source.md"
+        - "story": "properties/recommendations/story.md"
+        - "audience": "properties/recommendations/audience.md"
+      - "Metrics": 
+        - "acknowledged": "properties/feedback/acknowledgeCount.md"
+        - "ignored": "properties/feedback/ignoreCount.md"
+        - "confirmed": "properties/feedback/confirmCount.md"
+        - "rejected": "properties/feedback/rejectCount.md"
+  
+
+      - "Explicit Feedback"
+
+  
+

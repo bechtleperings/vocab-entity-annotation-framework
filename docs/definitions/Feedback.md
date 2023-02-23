@@ -7,3 +7,15 @@ User feedback is an important component of the iterative process of machine lear
 In addition to improving the performance of machine learning models, user feedback can also be used to ensure that machine learning applications are aligned with the needs and preferences of their intended audience. By collecting feedback on user experience, data scientists can identify areas for improvement, refine user interfaces, and enhance the overall usability of their applications.
 
 Overall, user feedback plays a critical role in the development and refinement of machine learning models and applications, helping to ensure that they meet the needs and expectations of their users.
+
+
+## Requirements
+
+* Distinction between explicit and implicit feedback
+* Implicit Feedback -> schema.org /Interaction Count
+* Explicit Feedback -> Dataset Usage Vocabulary (DUV) 
+
+
+
+## Example
+
