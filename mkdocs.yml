@@ -54,3 +54,5 @@ nav:
 
   
 
+markdown_extensions:
+  - footnotes
