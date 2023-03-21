@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Property *ignoreCount*
+# Ignored recommendations
 
 
 There can be several reasons for ignoring a recommendation, including:
@@ -20,7 +20,7 @@ In some cases, ignoring a recommendation may be appropriate if the recipient has
 
 ## Schema
 
-````ttl
+````turtle
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
@@ -38,8 +38,8 @@ eaf:ignoreCount a rdfs:Property
 
 ## Example
 
-````ttl
-@prefix : <http://example.org/>
+````turtle
+@prefix eaf: <http://w3id.org/avs/eaf>
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skill: <http://data.europa.eu/esco/skill> .
@@ -51,9 +51,10 @@ eaf:ignoreCount a rdfs:Property
    sdo:title "Brew your own beer. Leaction 5: Roasting the malt."
    sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d
 
-<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> a sdo:Recommendation
-    eaf:confidence "0.7"
-    eaf:ignoreCount 23
+<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>>
+    eaf:confidence "0.2"
+    eaf:ignoreCount 54
+    eaf:acknowledgeCount 12
 
 ````
 

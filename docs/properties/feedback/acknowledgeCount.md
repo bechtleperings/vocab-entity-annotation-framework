@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Property *acknowledgeCount*
+# Implicit acknowledgement of a recommendation. 
 
 
 A recommendation has been acknowledged, if a user is following the suggestion in the application. 
@@ -34,7 +34,7 @@ eaf:acknowledgeCount a rdfs:Property
 
 ## Example
 
-````ttl
+```turtle
 @prefix : <http://example.org/>
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -47,11 +47,12 @@ eaf:acknowledgeCount a rdfs:Property
    sdo:title "Brew your own beer. Leaction 5: Roasting the malt."
    sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d
 
-<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> a sdo:Recommendation
+<<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> 
+    a eaf:Recommendation
     eaf:confidence "0.7"
     eaf:acknowledgeCount 23
 
-````
+```
 
 ## Notes 
 
