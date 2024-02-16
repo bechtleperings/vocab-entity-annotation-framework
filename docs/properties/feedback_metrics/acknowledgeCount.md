@@ -20,14 +20,14 @@ In the context of knowledge management, acknowledgement of recommendations is an
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix eaf:    <http://w3id.org/eaf> . 
+@prefix eav:    <http://w3id.org/eav> . 
 @prefix sdo:    <https://schema.org/> .
 
 
-eaf:acknowledgeCount a rdfs:Property
+eav:acknowledgeCount a rdfs:Property
     rdfs:label "count of acknowledgements"@en ;
     rdfs:comment "Implicit user feedback counting the number of interactions, where a user followed a recommendation"@en ;
-    vann:usageNote "(statement) eaf:acknowledgeCount (predicate) xsd:integer (object)"@en ;
+    vann:usageNote "(statement) eav:acknowledgeCount (predicate) xsd:integer (object)"@en ;
 
 ````
 
@@ -41,6 +41,7 @@ eaf:acknowledgeCount a rdfs:Property
 @prefix skill: <http://data.europa.eu/esco/skill> .
 @prefix esco: <http://data.europa.eu/esco/> .
 @prefix rec: <http://purl.org/ontology/rec/core#> .
+@prefix eav: <http://w3id.org/eav/> . 
 
 
 :x a sdo:LearningResource
@@ -48,9 +49,9 @@ eaf:acknowledgeCount a rdfs:Property
    sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d
 
 <<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> 
-    a eaf:Recommendation
-    eaf:confidence "0.7"
-    eaf:acknowledgeCount 23
+    a eav:Recommendation
+    eav:confidence "0.7"
+    eav:acknowledgeCount 23
 
 ```
 
@@ -62,6 +63,8 @@ Schema.org provides the [InteractionCounter](https://schema.org/InteractionCount
 It would complicate the definition, and we cannot directly address the property details anymore. 
 
 ````
+@prefix eav: <http://w3id.org/eav/> . 
+
 eaf:AcknowledgeCounter rdfs:subClassOf sdo:InteractionCounter
 
 :x a sdo:LearningResource

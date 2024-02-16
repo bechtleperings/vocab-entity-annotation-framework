@@ -7,7 +7,7 @@ The proposed framework provides a common vocabulary to capture recommendations a
 Further information about: 
 
 * [Annotations](definitions/Annotations.md)
-* [Recommendations](definitions/Recommendations.md.md)
+* [Recommendations](definitions/Recommendations.md)
 
 
 

@@ -24,14 +24,14 @@ In some cases, ignoring a recommendation may be appropriate if the recipient has
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix eaf:    <http://w3id.org/eaf> . 
+@prefix eav:    <http://w3id.org/eav> . 
 @prefix sdo:    <https://schema.org/> .
 
 
-eaf:ignoreCount a rdfs:Property
+eav:ignoreCount a rdfs:Property
     rdfs:label "ignored recommendations count"@en ;
     rdfs:comment "Implicit user feedback counting the number of interactions, where a user ignored a recommendation"@en ;
-    vann:usageNote "(statement) eaf:acknowledgeCount (predicate) xsd:integer (object)"@en ;
+    vann:usageNote "(statement) eav:acknowledgeCount (predicate) xsd:integer (object)"@en ;
 
 ````
 
@@ -39,7 +39,7 @@ eaf:ignoreCount a rdfs:Property
 ## Example
 
 ````turtle
-@prefix eaf: <http://w3id.org/avs/eaf>
+@prefix eav: <http://w3id.org/avs/eav>
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skill: <http://data.europa.eu/esco/skill> .
@@ -52,9 +52,9 @@ eaf:ignoreCount a rdfs:Property
    sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d
 
 <<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>>
-    eaf:confidence "0.2"
-    eaf:ignoreCount 54
-    eaf:acknowledgeCount 12
+    eav:confidence "0.2"
+    eav:ignoreCount 54
+    eav:acknowledgeCount 12
 
 ````
 

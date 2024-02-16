@@ -22,21 +22,23 @@ Keywords
 ## Example
 
 ```turtle
+@prefix eav: <http://w3id.org/eav/> . 
+
 :x a sdo:LearningResource
   sdo:requiresCompetency esco:SkillA
 
 <<:x sdo:requiresCompetency esco:SkillA>> 
-  eaf:recommendation :r1
-  eaf:recommendation :r2
+  eav:recommendation :r1
+  eav:recommendation :r2
 
-:r1 a eaf:Recommendation
-  eaf:confirmCount 42
-  eaf:rejectCount  12
-  eaf:positiveFeedback "good recommendation"
+:r1 a eav:Recommendation
+  eav:confirmCount 42
+  eav:rejectCount  12
+  eav:positiveFeedback "good recommendation"
 
-:r2 a eaf:Recommendation
-  eaf:confirmCount 3
-  eaf:rejectCount  45
+:r2 a eav:Recommendation
+  eav:confirmCount 3
+  eav:rejectCount  45
   
 
 ```

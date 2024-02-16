@@ -18,7 +18,7 @@ The goal of recommendations in knowledge management is to make it easier for use
 @prefix skill: <http://data.europa.eu/esco/skill> .
 @prefix esco: <http://data.europa.eu/esco/> .
 @prefix rec: <http://purl.org/ontology/rec/core#> .
-
+@prefix eav: <http://w3id.org/eav/> . 
 
 :x1 a sdo:LearningResource
    sdo:title "Brew your own beer. Leaction 5: Roasting the malt."
@@ -28,7 +28,7 @@ The goal of recommendations in knowledge management is to make it easier for use
    sdo:title "Learning path for brewing beer"
 
 <<:x sdo:teaches esco:871c3f9f-c5ba-41bc-8978-71ef940c149d>> 
-  a eaf:Recommendation
+  a eav:Recommendation
   sdo:partOf :x2
 
 ```

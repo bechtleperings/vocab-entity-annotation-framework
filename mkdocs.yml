@@ -41,17 +41,25 @@ nav:
     - "Classes": 
       - "Recommendation": "classes/Recommendation.md"
     - "Properties":
+      - "Explanation": "properties/explanation.md"
       - "Recommendations": 
-        - "confidence": "properties/recommendations/confidence.md"
         - "source": "properties/recommendations/source.md"
         - "story": "properties/recommendations/story.md"
         - "audience": "properties/recommendations/audience.md"
+        - "confidence": "properties/recommendations/confidence.md"
       - "Metrics": 
-        - "acknowledged": "properties/feedback/acknowledgeCount.md"
-        - "ignored": "properties/feedback/ignoreCount.md"
-        - "confirmed": "properties/feedback/confirmCount.md"
-        - "rejected": "properties/feedback/rejectCount.md"
-      - "Explicit Feedback"
+        - "acknowledged": "properties/feedback_metrics/acknowledgeCount.md"
+        - "ignored": "properties/feedback_metrics/ignoreCount.md"
+        - "confirmed": "properties/feedback_metrics/confirmCount.md"
+        - "rejected": "properties/feedback_metrics/rejectCount.md"
+      - "Annotations":
+        - "confidence": "properties/annotations/confidence.md"
+        - "model": "properties/annotations/model.md"
+        - "created": "properties/annotations/created.md"
+        - "status": "properties/annotations/status.md"
+        - "updated": "properties/annotations/updated.md"
+      #- "Explicit Feedback":
+        #- "empty": "properties/explicit_feedback/empty.md"
 
   
 
