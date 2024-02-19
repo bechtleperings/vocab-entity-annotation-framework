@@ -5,6 +5,7 @@ hide:
 
 # Detail *created*
 
+The detailed parameter "Created" contains a timestamp in standard time format and is retained as a parameter during the generation of knowledge content by an LLM. It serves for time documentation to ensure the currency of knowledge. This facilitates the determination of outdated information to renew it.
 
 ### Schemata
 
