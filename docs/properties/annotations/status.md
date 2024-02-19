@@ -5,6 +5,7 @@ hide:
 
 # Detail *status*
 
+The detailed parameter "status" encompasses the current status of a piece of knowledge information. This includes storing information such as the availability or absence of a piece of information and its reason.
 
 ### Schemata
 

@@ -5,6 +5,7 @@ hide:
 
 # Detail *model*
 
+The detailed parameter "model" returns, as a string, the model of the LLM used as the basis for generating the displayed information. If this parameter is not set, it defaults to the [standard defined LLM](../explanation.md#llm-usage).
 
 ### Schemata
 

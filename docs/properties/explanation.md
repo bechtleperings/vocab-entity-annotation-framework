@@ -15,6 +15,7 @@ The Details are therefore of the form
 
 <br/>
 <br/>
+
 # Datenraum
 
 ## All steps to process the data from *Datenraum* - the central data pool for the [Bildungsraum](https://www.meinbildungsraum.de) project:
@@ -48,3 +49,7 @@ So the following Detail is suggested to be used here:
 
 In the final step the resulting content is feed back to Datenraum as proposal for new edges. As this means a publication of our results to Datenraum we set the Detail of the corresponding statements in the entitygraph to: 
 > `eav:status "published"`
+
+# LLM usage
+
+Our default LLM is ...
