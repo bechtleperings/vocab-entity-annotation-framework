@@ -52,4 +52,4 @@ In the final step the resulting content is feed back to Datenraum as proposal fo
 
 # LLM usage
 
-Our default LLM is ...
+Our default LLM is a Mistral-7B-Instruct-v0.2 llm.
