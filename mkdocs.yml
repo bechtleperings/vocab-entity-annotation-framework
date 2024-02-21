@@ -54,6 +54,7 @@ nav:
         - "rejected": "properties/feedback_metrics/rejectCount.md"
       - "Annotations":
         - "confidence": "properties/annotations/confidence.md"
+        - "explanation": "properties/annotations/explanation.md"
         - "model": "properties/annotations/model.md"
         - "created": "properties/annotations/created.md"
         - "status": "properties/annotations/status.md"

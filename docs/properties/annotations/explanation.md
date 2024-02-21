@@ -3,9 +3,9 @@ hide:
   - toc
 ---
 
-# Detail *confidence*
+# Detail *explanation*
 
-The detailed parameter "confidence" is queried during the generation of knowledge content by an LLM and describes the accuracy of the LLM in correctly answering the question. The LLM takes into account the amount of information received in order to provide a precise and likely correct response. The value is recorded as a decimal between 0 and 1, with anything below 0.6 to be approached with caution.
+The detailed parameter "explanation" is queried during the generation of knowledge content by an LLM and describes the reasoning of the LLM why it chose this answer. The LLM describes their choice of confidence value by giving information about fulfilled criterias and incomplete input.
 
 ## Schemata
 
@@ -15,9 +15,9 @@ The detailed parameter "confidence" is queried during the generation of knowledg
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix eav:    <http://w3id.org/eav/> . 
 
-eav:confidence a rdf:Property ;
+eav:explanation a rdf:Property ;
   rdfs:label "confidence" ;
-  rdfs:comment "Numerical value as a measure of trust into the statement."@en ;
+  rdfs:comment "Literal sentences explaining the choice of answer from llm."@en ;
   rdfs:domain rdfs:Resource ;
   rdfs:isDefinedBy <http://www.w3id.org/eav> ;
   rdfs:range xsd:float .
@@ -41,7 +41,7 @@ eav:confidence a rdf:Property ;
     "@language": "en",
     "@value": "This learning resource, titled Aufgaben zur Wahrscheinlichkeit (Tasks on Probability), is likely intended for students studying mathematics, particularly those in upper secondary or tertiary education focusing on probability and statistics. The tasks may also be suitable for teachers or mentors preparing lessons on this topic, as well as trainees or professionals in fields requiring a good understanding of probability concepts.",
     "@annotation": [
-      "eav:confidence": "0.85"
+        "eav:explanation": "The name Aufgaben zur Wahrscheinlichkeit suggests that the resource is related to probability learning, which is typically taught at advanced levels of mathematics education. The description does not indicate a specific audience beyond students and teachers, but given the nature of the content, it seems most likely to be targeted towards this demographic. However, it's also plausible that professionals or trainees in fields like finance, insurance, engineering, and data analysis might find value in using these tasks for self-study or review. The title and description do not suggest that the resource is intended for beginners, children, hobbyists, retirees, or the unemployed, although it could potentially be used as supplementary material for various audiences."
     ]
   ]
 

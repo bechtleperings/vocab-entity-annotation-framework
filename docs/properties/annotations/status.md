@@ -5,7 +5,7 @@ hide:
 
 # Detail *status*
 
-The detailed parameter "status" encompasses the current status of a piece of knowledge information. This includes storing information such as the availability or absence of a piece of information and its reason.
+The detailed parameter "status" encompasses the current status of a piece of knowledge information. This includes storing information such as the availability or absence of a piece of information and its reason. Possible statuses are: rejected, suggested
 
 ### Schemata
 
@@ -22,3 +22,27 @@ eav:status a rdf:Property ;
   rdfs:range rdfs:Literal .
 
 ````
+
+## Example
+
+```turtle
+@prefix : <http://example.org/>
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skill: <http://data.europa.eu/esco/skill> .
+@prefix esco: <http://data.europa.eu/esco/> .
+@prefix rec: <http://purl.org/ontology/rec/core#> .
+@prefix eav: <http://w3id.org/eav/> . 
+
+
+:x a sdo:LearningResource
+  sdo:name : "Aufgabe aus \"Aufgaben zur Wahrscheinlichkeit\""
+  sdo:audiences: [
+    "@language": "en",
+    "@value": "This learning resource, titled Aufgaben zur Wahrscheinlichkeit (Tasks on Probability), is likely intended for students studying mathematics, particularly those in upper secondary or tertiary education focusing on probability and statistics. The tasks may also be suitable for teachers or mentors preparing lessons on this topic, as well as trainees or professionals in fields requiring a good understanding of probability concepts.",
+    "@annotation": [
+      "eav:status": "rejected"
+    ]
+  ]
+
+```
