@@ -1,0 +1,27 @@
+name: MkDocs Deploy
+
+on:
+  push:
+    branches:
+      - draft
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-rtd-dropdown mkdocs-git-revision-date-plugin mkdocs-git-revision-date-localized-plugin mkdocs-yamp mkdocs-markdownextradata-plugin Pygments
+
+      - name: Build and deploy
+        run: |
+          mkdocs gh-deploy --force
