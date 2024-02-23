@@ -59,6 +59,7 @@ nav:
         - "created": "properties/annotations/created.md"
         - "status": "properties/annotations/status.md"
         - "updated": "properties/annotations/updated.md"
+        - "cosSimilarity": "properties/annotations/cosSimilarity.md"
       #- "Explicit Feedback":
         #- "empty": "properties/explicit_feedback/empty.md"
 
