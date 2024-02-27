@@ -24,7 +24,8 @@ theme:
     - navigation.sections
     - navigation.tracking
     - navigation.tabs  
-
+    - content.tabs.link
+    
 extra:
   generator: false
   social:
@@ -75,3 +76,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
